@@ -1,22 +1,59 @@
-<!doctype html>
-<html lang="es"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sidy Thiam | Commercial</title>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111111">
+<title>Sidy Thiam | Commercial | FJP-ETT</title>
 <style>
-body{margin:0;background:#f4f5f6;font-family:Arial,sans-serif;color:#252a2e}
-.container{max-width:720px;margin:auto;padding:18px}
-.card{background:white;border-radius:20px;overflow:hidden;box-shadow:0 8px 30px #0002}
-.cardimg{width:100%;display:block}.buttons{padding:18px}
-.btn{display:flex;justify-content:center;text-decoration:none;padding:14px;margin:10px 0;border-radius:10px;background:#142641;color:white;font-weight:700;font-size:17px}
-.wa{background:#25D366}.mail{background:#4a5560}.contact{background:#147a20}
-.note{text-align:center;color:#68717d;font-size:13px;padding:0 18px 20px}
-</style></head><body><div class="container"><div class="card">
-<img class="cardimg" src="tarjeta.png" alt="Tarjeta profesional de Sidy Thiam">
-<div class="buttons">
+*{box-sizing:border-box}
+body{margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-serif;color:#111}
+.container{max-width:760px;margin:auto;padding:20px 14px 30px}
+.card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.16)}
+.top{position:relative;min-height:310px;padding:30px 28px;overflow:hidden}
+.top:after{content:"";position:absolute;right:-110px;top:-80px;width:390px;height:470px;background:#151515;transform:skewX(-12deg);z-index:0}
+.top:before{content:"";position:absolute;right:230px;top:-70px;width:18px;height:470px;background:#e30613;transform:skewX(-12deg);z-index:1}
+.content{position:relative;z-index:2;display:flex;gap:28px;align-items:center}
+.info{flex:1;min-width:0}
+.brand{font-size:42px;font-weight:900;font-style:italic;letter-spacing:-4px;color:#e30613;line-height:.8;margin-bottom:10px}
+.company{font-size:11px;font-weight:700;margin-bottom:28px}
+h1{margin:0;font-size:31px;letter-spacing:.5px}
+.role{color:#e30613;font-size:20px;margin:5px 0 8px}
+.line{width:55px;height:3px;background:#e30613;margin:10px 0 18px}
+.contact{font-size:15px;line-height:1.45}
+.contact div{margin:8px 0}
+.contact a{color:#111;text-decoration:none}
+.photo{width:205px;height:245px;object-fit:cover;object-position:center top;border-radius:12px;border:3px solid #fff;box-shadow:0 5px 18px rgba(0,0,0,.28)}
+.buttons{padding:18px 22px 22px}
+.btn{display:block;text-align:center;text-decoration:none;padding:14px 12px;margin:10px 0;border-radius:10px;background:#151515;color:#fff;font-weight:700;font-size:16px}
+.btn.red{background:#e30613}.btn.green{background:#25D366}.btn.light{background:#f0f0f0;color:#111;border:1px solid #ddd}
+.note{text-align:center;color:#777;font-size:12px;padding:0 20px 20px}
+@media(max-width:600px){.top{padding:24px 20px;min-height:auto}.top:after{right:-170px}.top:before{right:175px}.content{gap:16px;align-items:flex-start}.photo{width:135px;height:175px}.brand{font-size:34px}.company{margin-bottom:18px}h1{font-size:25px}.role{font-size:17px}.contact{font-size:13px}}
+@media(max-width:430px){.content{display:block}.photo{display:block;width:150px;height:190px;margin:0 auto 22px}.info{text-align:center}.line{margin:10px auto 16px}}
+</style>
+</head>
+<body>
+<div class="container"><div class="card">
+<section class="top"><div class="content">
+<div class="info">
+<div class="brand">FJP</div>
+<div class="company">EMPRESA DE TRABAJO TEMPORAL S.L.</div>
+<h1>SIDY THIAM</h1>
+<div class="role">Commercial</div><div class="line"></div>
+<div class="contact">
+<div>📞 <a href="tel:+34641882879">+34 641 88 28 79</a></div>
+<div>📞 <a href="tel:+33748333214">+33 7 48 33 32 14</a></div>
+<div>✉️ <a href="mailto:sidythiam.fjpett@gmail.com">sidythiam.fjpett@gmail.com</a></div>
+</div></div>
+<img class="photo" src="sidy.jpg" alt="Sidy Thiam">
+</div></section>
+<section class="buttons">
+<a class="btn green" href="https://wa.me/34632695444" target="_blank" rel="noopener">💬 WhatsApp · +34 632 69 54 44</a>
+<a class="btn red" href="tel:+34641882879">📞 Llamar a España · +34 641 88 28 79</a>
 <a class="btn" href="tel:+33748333214">📞 Llamar a Francia · +33 7 48 33 32 14</a>
-<a class="btn" href="tel:+34641882879">📞 Llamar a España · +34 641 882 879</a>
-<a class="btn wa" href="https://wa.me/34632695444" target="_blank" rel="noopener">💬 WhatsApp · España</a>
-<a class="btn mail" href="mailto:sidythiam.fjpett@gmail.com">✉️ Enviar correo</a>
-<a class="btn contact" href="contacto_sidy.vcf" download>📇 Guardar contacto</a>
-</div><div class="note">Sidy Thiam · Commercial</div>
-</div></div></body></html>
+<a class="btn light" href="mailto:sidythiam.fjpett@gmail.com">✉️ Enviar correo</a>
+<a class="btn light" href="contacto_sidy.vcf" download>📇 Guardar contacto</a>
+</section>
+<div class="note">FJP-ETT · Calle Perú, Edificio Forum, Planta 2, Oficina 8 · 30820 Alcantarilla, Murcia</div>
+</div></div>
+</body></html>
