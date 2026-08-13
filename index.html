@@ -2,58 +2,413 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#111111">
 <title>Sidy Thiam | Commercial | FJP-ETT</title>
+
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-serif;color:#111}
-.container{max-width:760px;margin:auto;padding:20px 14px 30px}
-.card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.16)}
-.top{position:relative;min-height:310px;padding:30px 28px;overflow:hidden}
-.top:after{content:"";position:absolute;right:-110px;top:-80px;width:390px;height:470px;background:#151515;transform:skewX(-12deg);z-index:0}
-.top:before{content:"";position:absolute;right:230px;top:-70px;width:18px;height:470px;background:#e30613;transform:skewX(-12deg);z-index:1}
-.content{position:relative;z-index:2;display:flex;gap:28px;align-items:center}
-.info{flex:1;min-width:0}
-.brand{font-size:42px;font-weight:900;font-style:italic;letter-spacing:-4px;color:#e30613;line-height:.8;margin-bottom:10px}
-.company{font-size:11px;font-weight:700;margin-bottom:28px}
-h1{margin:0;font-size:31px;letter-spacing:.5px}
-.role{color:#e30613;font-size:20px;margin:5px 0 8px}
-.line{width:55px;height:3px;background:#e30613;margin:10px 0 18px}
-.contact{font-size:15px;line-height:1.45}
-.contact div{margin:8px 0}
-.contact a{color:#111;text-decoration:none}
-.photo{width:205px;height:245px;object-fit:cover;object-position:center top;border-radius:12px;border:3px solid #fff;box-shadow:0 5px 18px rgba(0,0,0,.28)}
-.buttons{padding:18px 22px 22px}
-.btn{display:block;text-align:center;text-decoration:none;padding:14px 12px;margin:10px 0;border-radius:10px;background:#151515;color:#fff;font-weight:700;font-size:16px}
-.btn.red{background:#e30613}.btn.green{background:#25D366}.btn.light{background:#f0f0f0;color:#111;border:1px solid #ddd}
-.note{text-align:center;color:#777;font-size:12px;padding:0 20px 20px}
-@media(max-width:600px){.top{padding:24px 20px;min-height:auto}.top:after{right:-170px}.top:before{right:175px}.content{gap:16px;align-items:flex-start}.photo{width:135px;height:175px}.brand{font-size:34px}.company{margin-bottom:18px}h1{font-size:25px}.role{font-size:17px}.contact{font-size:13px}}
-@media(max-width:430px){.content{display:block}.photo{display:block;width:150px;height:190px;margin:0 auto 22px}.info{text-align:center}.line{margin:10px auto 16px}}
+
+html{background:#f2f2f2}
+
+body{
+    margin:0;
+    background:#f2f2f2;
+    font-family:Arial,Helvetica,sans-serif;
+    color:#111;
+    -webkit-text-size-adjust:100%;
+}
+
+.container{
+    width:100%;
+    max-width:520px;
+    margin:0 auto;
+    padding:12px 10px 24px;
+}
+
+.card{
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 8px 30px rgba(0,0,0,.16);
+}
+
+/* PARTE SUPERIOR */
+.top{
+    position:relative;
+    background:#fff;
+    padding:24px 18px 22px;
+    overflow:hidden;
+    border-bottom:1px solid #eee;
+}
+
+.top:after{
+    content:"";
+    position:absolute;
+    right:-105px;
+    top:-90px;
+    width:260px;
+    height:350px;
+    background:#151515;
+    transform:skewX(-12deg);
+    z-index:0;
+}
+
+.top:before{
+    content:"";
+    position:absolute;
+    right:112px;
+    top:-70px;
+    width:12px;
+    height:360px;
+    background:#e30613;
+    transform:skewX(-12deg);
+    z-index:1;
+}
+
+.content{
+    position:relative;
+    z-index:2;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.brand{
+    font-size:46px;
+    font-weight:900;
+    font-style:italic;
+    letter-spacing:-5px;
+    color:#e30613;
+    line-height:.8;
+    margin:2px 0 10px;
+}
+
+.company{
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:.2px;
+    margin-bottom:18px;
+}
+
+.photo{
+    display:block;
+    width:min(58vw,190px);
+    height:min(72vw,235px);
+    object-fit:cover;
+    object-position:center top;
+    border-radius:14px;
+    border:3px solid #fff;
+    box-shadow:0 6px 20px rgba(0,0,0,.28);
+    margin:0 auto 18px;
+}
+
+.info{
+    width:100%;
+    min-width:0;
+}
+
+h1{
+    margin:0;
+    font-size:clamp(27px,8vw,34px);
+    letter-spacing:.5px;
+    line-height:1.1;
+    overflow-wrap:anywhere;
+}
+
+.role{
+    color:#e30613;
+    font-size:clamp(18px,5vw,21px);
+    font-weight:700;
+    margin:6px 0 8px;
+}
+
+.line{
+    width:55px;
+    height:3px;
+    background:#e30613;
+    margin:10px auto 16px;
+}
+
+.contact{
+    font-size:15px;
+    line-height:1.4;
+}
+
+.contact div{
+    margin:7px 0;
+    overflow-wrap:anywhere;
+}
+
+.contact a{
+    color:#111;
+    text-decoration:none;
+}
+
+/* BOTONES */
+.buttons{
+    padding:16px 16px 12px;
+}
+
+.btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:52px;
+    text-align:center;
+    text-decoration:none;
+    padding:13px 12px;
+    margin:10px 0;
+    border-radius:12px;
+    background:#151515;
+    color:#fff;
+    font-weight:700;
+    font-size:16px;
+    line-height:1.25;
+    overflow-wrap:anywhere;
+}
+
+.btn.red{
+    background:#e30613;
+}
+
+.btn.green{
+    background:#25D366;
+}
+
+.btn.light{
+    background:#f0f0f0;
+    color:#111;
+    border:1px solid #ddd;
+}
+
+/* QR */
+.qr-section{
+    text-align:center;
+    padding:8px 20px 18px;
+    border-top:1px solid #eee;
+}
+
+.qr-title{
+    font-size:14px;
+    font-weight:700;
+    margin:4px 0 10px;
+}
+
+.qr{
+    display:block;
+    width:170px;
+    height:170px;
+    margin:0 auto 8px;
+    border-radius:8px;
+}
+
+.qr-note{
+    font-size:11px;
+    color:#777;
+    margin:0;
+}
+
+/* DIRECCIÓN */
+.note{
+    text-align:center;
+    color:#777;
+    font-size:11px;
+    line-height:1.4;
+    padding:0 18px 20px;
+}
+
+/* TABLET / ORDENADOR */
+@media(min-width:521px){
+    .container{
+        padding-top:24px;
+    }
+
+    .top{
+        padding:28px 24px;
+    }
+
+    .buttons{
+        padding-left:24px;
+        padding-right:24px;
+    }
+}
+
+/* TELÉFONOS PEQUEÑOS */
+@media(max-width:360px){
+
+    .container{
+        padding-left:7px;
+        padding-right:7px;
+    }
+
+    .top{
+        padding-left:14px;
+        padding-right:14px;
+    }
+
+    .photo{
+        width:145px;
+        height:185px;
+    }
+
+    .contact{
+        font-size:14px;
+    }
+
+    .btn{
+        font-size:15px;
+        min-height:50px;
+        padding-left:8px;
+        padding-right:8px;
+    }
+
+    .qr{
+        width:150px;
+        height:150px;
+    }
+}
 </style>
 </head>
+
 <body>
-<div class="container"><div class="card">
-<section class="top"><div class="content">
-<div class="info">
+
+<div class="container">
+
+<div class="card">
+
+<!-- CABECERA -->
+<section class="top">
+
+<div class="content">
+
 <div class="brand">FJP</div>
-<div class="company">EMPRESA DE TRABAJO TEMPORAL S.L.</div>
+
+<div class="company">
+EMPRESA DE TRABAJO TEMPORAL S.L.
+</div>
+
+<img
+class="photo"
+src="sidy.jpg"
+alt="Sidy Thiam"
+>
+
+<div class="info">
+
 <h1>SIDY THIAM</h1>
-<div class="role">Commercial</div><div class="line"></div>
+
+<div class="role">
+Commercial
+</div>
+
+<div class="line"></div>
+
 <div class="contact">
-<div>📞 <a href="tel:+34641882879">+34 641 88 28 79</a></div>
-<div>📞 <a href="tel:+33748333214">+33 7 48 33 32 14</a></div>
-<div>✉️ <a href="mailto:sidythiam.fjpett@gmail.com">sidythiam.fjpett@gmail.com</a></div>
-</div></div>
-<img class="photo" src="sidy.jpg" alt="Sidy Thiam">
-</div></section>
-<section class="buttons">
-<a class="btn green" href="https://wa.me/34632695444" target="_blank" rel="noopener">💬 WhatsApp · +34 632 69 54 44</a>
-<a class="btn red" href="tel:+34641882879">📞 Llamar a España · +34 641 88 28 79</a>
-<a class="btn" href="tel:+33748333214">📞 Llamar a Francia · +33 7 48 33 32 14</a>
-<a class="btn light" href="mailto:sidythiam.fjpett@gmail.com">✉️ Enviar correo</a>
-<a class="btn light" href="contacto_sidy.vcf" download>📇 Guardar contacto</a>
+
+<div>
+📞 <a href="tel:+34641882879">
++34 641 88 28 79
+</a>
+</div>
+
+<div>
+📞 <a href="tel:+33748333214">
++33 7 48 33 32 14
+</a>
+</div>
+
+<div>
+✉️ <a href="mailto:sidythiam.fjpett@gmail.com">
+sidythiam.fjpett@gmail.com
+</a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
-<div class="note">FJP-ETT · Calle Perú, Edificio Forum, Planta 2, Oficina 8 · 30820 Alcantarilla, Murcia</div>
-</div></div>
-</body></html>
+
+
+<!-- BOTONES -->
+<section class="buttons">
+
+<a
+class="btn green"
+href="https://wa.me/34632695444"
+target="_blank"
+rel="noopener"
+>
+💬 WhatsApp · +34 632 69 54 44
+</a>
+
+<a
+class="btn red"
+href="tel:+34641882879"
+>
+📞 Llamar a España · +34 641 88 28 79
+</a>
+
+<a
+class="btn"
+href="tel:+33748333214"
+>
+📞 Llamar a Francia · +33 7 48 33 32 14
+</a>
+
+<a
+class="btn light"
+href="mailto:sidythiam.fjpett@gmail.com"
+>
+✉️ Enviar correo
+</a>
+
+<a
+class="btn light"
+href="contacto_sidy.vcf"
+download
+>
+📇 Guardar contacto
+</a>
+
+</section>
+
+
+<!-- QR -->
+<section class="qr-section">
+
+<div class="qr-title">
+QR · FJP-ETT
+</div>
+
+<img
+class="qr"
+src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https%3A%2F%2Fleafy-zabaione-4d0f25.netlify.app%2F"
+alt="Código QR de la tarjeta digital FJP-ETT"
+>
+
+<p class="qr-note">
+Escanea para abrir la tarjeta digital
+</p>
+
+</section>
+
+
+<!-- DIRECCIÓN -->
+<div class="note">
+
+FJP-ETT · Calle Perú, Edificio Forum, Planta 2,
+Oficina 8 · 30820 Alcantarilla, Murcia
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
